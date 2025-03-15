@@ -1,10 +1,10 @@
-// 1. Criar um array para armazenar os nomes
+// 1 - Criar um array para armazenar os nomes
 const amigos = [];
 
 // Variável para controlar o modo atual (sorteio ou combinação)
 let modo = 'sorteio';
 
-// 2. Função para adicionar um nome à lista de amigos
+// 2 - Função para adicionar um nome à lista de amigos
 function adicionarAmigo() {
     const nomeInput = document.getElementById('amigo');
     const nome = nomeInput.value.trim();
@@ -34,7 +34,7 @@ function atualizarListaAmigos() {
     });
 }
 
-// 3. Função para sortear um amigo aleatório (Modo Sorteio Simples)
+// 3 - Função para sortear um amigo aleatório (Modo Sorteio Simples)
 function sortearAmigo() {
     if (amigos.length === 0) {
         alert("A lista de amigos está vazia!");
@@ -48,7 +48,7 @@ function sortearAmigo() {
     }
 }
 
-// 4. Função para combinar amigos (Modo Combinação) com embaralhamento para evitar combinações fixas
+// 4 - Função para combinar amigos (Modo Combinação) com embaralhamento para evitar combinações fixas
 function combinarPresentes() {
     if (amigos.length < 2) {
         alert("É necessário pelo menos 2 amigos para realizar a combinação.");
@@ -79,7 +79,7 @@ function combinarPresentes() {
     }
 }
 
-// 5. Função para alternar entre os modos de Sorteio e Combinação
+// 5-Função para alternar entre os modos de Sorteio e Combinação
 function alternarModo() {
     const resultado = document.getElementById('resultado');
     const botaoModo = document.getElementById('botaoModo');
@@ -95,7 +95,7 @@ function alternarModo() {
     }
 }
 
-// 6. Função para realizar o sorteio ou a combinação dependendo do modo atual
+// 6-Função para realizar o sorteio ou a combinação dependendo do modo atual
 function realizarAcao() {
     if (modo === 'sorteio') {
         sortearAmigo();
