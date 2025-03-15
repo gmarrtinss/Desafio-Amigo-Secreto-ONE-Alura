@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-primary: #FFD700;
+    --color-secondary: #FFFFFF;
+    --color-tertiary: #FFD700;
+    --color-button: #FFD700;
+    --color-button-hover: #000000;
+    --color-text: #FFFFFF;
     --color-white: #FFFFFF;
 }
 
@@ -81,7 +81,7 @@ body {
 
 .input-name {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     border: 2px solid #000;
     border-radius: 25px 0 0 25px;
     font-size: 16px;
@@ -96,7 +96,7 @@ body {
 .input-title {
     flex: 1;
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 20px;
     border: 2px solid #333;
     border-right: none;
     border-radius: 25px 0 0 25px;
@@ -108,7 +108,7 @@ body {
 button {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     border: 2px solid #000;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -116,19 +116,19 @@ button {
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
+    background-color: #FFD700;
     color: var(--color-text);
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: #000000;
 }
 
-/* Listas */
+
 ul {
     list-style-type: none;
-    color: var(--color-text);
+    color: #FFD700;
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
@@ -136,8 +136,8 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
+    color: #FFD700;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
 }
@@ -159,4 +159,77 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* Botão de Mudar para Combinação */
+.button-switch {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    border: none;
+    border-radius: 30px;
+    padding: 14px 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px; /* Subir um pouco */
+    margin-bottom: 20px; /* Espaço entre os botões */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-switch:hover {
+    background-color: var(--color-button-hover);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Botão de Realizar Ação (Sortear ou Combinar) */
+.button-action {
+    background-color: #FFD700;
+    color: #FFFFFF;
+    border: 2px solid var(--color-primary);
+    border-radius: 30px;
+    padding: 14px 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.button-action img {
+    margin-right: 10px; 
+}
+
+.button-action:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+
+
+.button-action:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
 }
