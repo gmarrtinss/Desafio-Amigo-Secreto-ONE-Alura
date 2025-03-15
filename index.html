@@ -28,9 +28,13 @@
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
             <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-                    <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
-                    Sortear amigo
+                <!-- Botão para alternar entre os modos -->
+                <button id="botaoModo" class="button-switch" onclick="alternarModo()">Mudar para Combinação</button>
+                
+                <!-- Botão para realizar a ação dependendo do modo -->
+                <button class="button-action" onclick="realizarAcao()" aria-label="Sortear ou combinar">
+                    <img src="assets/play_circle_outline.png" alt="Ícone de ação">
+                    Realizar ação
                 </button>
             </div>
         </section>
